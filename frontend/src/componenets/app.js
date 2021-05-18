@@ -1,15 +1,18 @@
-import React,{Component} from "react";
-import { render } import "react-dom";
+import React, { Component } from "react";
+import { render } from "react-dom";
+import Input from "react-validation/build/input";
 
 export default class App extends Component {
-    constructor(props){
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }  render() {
+    return (
+    <div>
+    <HomePage />
+  </div>
+);
+  }
 }
 
-render() {
-    return <h1> Testing React Code </h1>;
-}
-
-const appDiv = document.getElementById("app")
-render(<App/>,appDiv);
+const appDiv = document.getElementById("app");
+render(<App />, appDiv);
